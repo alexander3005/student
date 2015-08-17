@@ -1,0 +1,34 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>student</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+ <listener>
+        <listener-class>student.web.SessionListener</listener-class>
+    </listener>
+ 
+
+ <servlet>
+<description></description>
+<display-name>StudentController</display-name>
+        <servlet-name>StudentController</servlet-name>
+        <servlet-class>student.web.StudentController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentController</servlet-name>
+        <url-pattern>/StudentController</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+<description></description>
+<display-name>StudentController</display-name>
+        <servlet-name>DisciplineController</servlet-name>
+        <servlet-class>student.web.DisciplineController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DisciplineController</servlet-name>
+        <url-pattern>/DisciplineController</url-pattern>
+    </servlet-mapping>
+</web-app>
