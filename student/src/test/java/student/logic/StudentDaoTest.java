@@ -5,7 +5,7 @@ import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertNotNull;
 public class StudentDaoTest  {
     public void testSelect() throws Exception{
-  try{
+  
         StudentDao studentDao=new StudentDao();
         Student student = new Student();
         student.setFirstName("S");
@@ -13,12 +13,12 @@ public class StudentDaoTest  {
         List< Student> list1=studentDao.select();
         assertNotNull(list1);
         assertTrue(list1.size()>0);
-}catch(Exception e){
-e.printStackTrace();}
+
+
     }
    
-    public void testInsert() throws Exception {
-        try{
+    public void testInsert() throws Exception{
+       
             StudentDao studentDao=new StudentDao();
             Student student = new Student();
             List<Student> list1 = studentDao.select();
@@ -27,14 +27,12 @@ e.printStackTrace();}
             studentDao.insert(student);
             List<Student> list2 = studentDao.select();
             assertTrue(list1.size()< list2.size() );
-        }catch(Exception e){
-e.printStackTrace();
-        }
+      
     }
 
 
  public void testUpdate() throws Exception{
-try{
+
         StudentDao studentDao=new StudentDao();
         Student student=new Student();
         int id=1;
@@ -47,13 +45,11 @@ try{
         assertEquals(student.id,id);
         assertEquals(student.firstName,firstName);
         assertEquals(student.secondName,secondName);
-}catch(Exception e){
-e.printStackTrace();}
+
 
     }
-    public void testgetStudentById() throws Exception{
-try{
-        StudentDao studentDao=new StudentDao();
+    public void testgetStudentById() throws Exception {
+      StudentDao studentDao=new StudentDao();
         Student student=new Student();
         student.setId(1);
         student.setFirstName("Sasha");
@@ -62,19 +58,17 @@ try{
         studentDao.getStudentById(student.id);
         assertEquals(student.firstName,"Sasha");
         assertEquals(student.secondName,"Lix");
-}catch(Exception e){
-e.printStackTrace();}
+
     }
-    public void testDelete()throws Exception{
-try{
+    public void testDelete() throws Exception{
+
         StudentDao studentDao=new StudentDao();
         Student student=new Student();
         List<Student> studentListOne=studentDao.select();
         studentDao.delete(136);
         List<Student> studentListTwo=studentDao.select();
        assertTrue(studentListOne.size()>studentListTwo.size());
-}catch(Exception e){
-e.printStackTrace();}
+
 
 
     }
