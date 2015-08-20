@@ -119,8 +119,9 @@ public  class StudentDao extends Dao<Student> {
     }
 
     @Override
-    public void delete( int id) throws DaoException {
+    public void delete(int id) throws DaoException {
         try {
+            
             getDelete();
             delete.setInt(1,id);
             delete.executeUpdate();
