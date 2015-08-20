@@ -13,7 +13,8 @@ public class StudentDaoTest  {
         List< Student> list1=studentDao.select();
         assertNotNull(list1);
         assertTrue(list1.size()>0);
-}catch(Exception e){}
+}catch(Exception e){
+e.printStackTrace();}
     }
    
     public void testInsert() throws Exception {
@@ -27,6 +28,7 @@ public class StudentDaoTest  {
             List<Student> list2 = studentDao.select();
             assertTrue(list1.size()< list2.size() );
         }catch(Exception e){
+e.printStackTrace();
         }
     }
 
@@ -45,7 +47,8 @@ try{
         assertEquals(student.id,id);
         assertEquals(student.firstName,firstName);
         assertEquals(student.secondName,secondName);
-}catch(Exception e){}
+}catch(Exception e){
+e.printStackTrace();}
 
     }
     public void testgetStudentById() throws Exception{
@@ -59,7 +62,8 @@ try{
         studentDao.getStudentById(student.id);
         assertEquals(student.firstName,"Sasha");
         assertEquals(student.secondName,"Lix");
-}catch(Exception e){}
+}catch(Exception e){
+e.printStackTrace();}
     }
     public void testDelete()throws Exception{
 try{
@@ -69,7 +73,8 @@ try{
         studentDao.delete(136);
         List<Student> studentListTwo=studentDao.select();
        assertTrue(studentListOne.size()>studentListTwo.size());
-}catch(Exception e){}
+}catch(Exception e){
+e.printStackTrace();}
 
 
     }
