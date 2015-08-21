@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="student.logic.StudentDaoTest" time="0.046" tests="5" errors="0" skipped="0" failures="0">
+<testsuite name="student.logic.StudentDaoTest" time="0.833" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_45\jre\bin"/>
     <property name="java.vm.version" value="25.45-b02"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="D:\Project\student"/>
+    <property name="maven.multiModuleProjectDirectory" value="d:\Project\student"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -17,7 +17,7 @@
     <property name="sun.os.patch.level" value=""/>
     <property name="test" value="StudentDaoTest"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="D:\Project\student"/>
+    <property name="user.dir" value="d:\Project\student"/>
     <property name="java.runtime.version" value="1.8.0_45-b14"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_45\jre\lib\endorsed"/>
@@ -29,7 +29,7 @@
     <property name="os.name" value="Windows 8.1"/>
     <property name="classworlds.conf" value="C:\Program Files\maven\apache_maven_3.3.3\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1251"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_45\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Git\cmd;C:\Program Files\maven\apache_maven_3.3.3\bin;.;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_45\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Git\cmd;C:\Program Files\maven\apache_maven_3.3.3\bin;;.;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -63,9 +63,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="student.logic.StudentDaoTest.testgetStudentById" classname="student.logic.StudentDaoTest" time="0.014"/>
-  <testcase name="student.logic.StudentDaoTest.testSelect" classname="student.logic.StudentDaoTest" time="0.009"/>
-  <testcase name="student.logic.StudentDaoTest.testDelete" classname="student.logic.StudentDaoTest" time="0.008"/>
-  <testcase name="student.logic.StudentDaoTest.testInsert" classname="student.logic.StudentDaoTest" time="0.007"/>
-  <testcase name="student.logic.StudentDaoTest.testUpdate" classname="student.logic.StudentDaoTest" time="0.008"/>
+  <testcase name="student.logic.StudentDaoTest.testgetStudentById" classname="student.logic.StudentDaoTest" time="0.406"/>
+  <testcase name="student.logic.StudentDaoTest.testUpdate" classname="student.logic.StudentDaoTest" time="0.135"/>
+  <testcase name="student.logic.StudentDaoTest.testSelect" classname="student.logic.StudentDaoTest" time="0.029"/>
+  <testcase name="student.logic.StudentDaoTest.testInsert" classname="student.logic.StudentDaoTest" time="0.105"/>
+  <testcase name="student.logic.StudentDaoTest.testDelete" classname="student.logic.StudentDaoTest" time="0.158"/>
 </testsuite>

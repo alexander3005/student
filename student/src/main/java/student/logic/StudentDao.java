@@ -3,15 +3,14 @@ import java.sql.*;
 import  java.util.*;
 public  class StudentDao extends Dao<Student> {
    
-    public StudentDao() throws DaoException {
-        try {
+   public StudentDao() throws DaoException {
+        try{
             Class.forName("com.mysql.jdbc.Driver");
             if(connection==null) {
                 connectionFactory = new ConnectionFactory();
                 connection = connectionFactory.getConnection();
-            }} catch (ClassNotFoundException e) {
-            throw new DaoException(e);
-        }
+            } }catch(ClassNotFoundException e){
+throw new DaoException(e);}
     }
 
     public PreparedStatement getInsert() throws DaoException {

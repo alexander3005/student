@@ -65,7 +65,7 @@ public class StudentDaoTest  {
         StudentDao studentDao=new StudentDao();
         Student student=new Student();
         List<Student> studentListOne=studentDao.select();
-        studentDao.delete(136);
+        studentDao.delete(217);
         List<Student> studentListTwo=studentDao.select();
        assertTrue(studentListOne.size()>studentListTwo.size());
 
